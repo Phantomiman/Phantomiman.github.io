@@ -1,0 +1,613 @@
+{
+  "updated": "2026-02-28",
+  "items": [
+    {
+      "id": 1,
+      "category": "Context stuffing/overflow",
+      "technique": "Inspect FAQ",
+      "example_pattern": "Redacted example: data-exfiltration attempt (repeat/echo full input).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 1,
+      "category": "Direct injection",
+      "technique": "Ignore Previous Instructions",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 2,
+      "category": "Direct injection",
+      "technique": "Debug Mode Activation",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 3,
+      "category": "Direct injection",
+      "technique": "Role Switching",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 4,
+      "category": "Direct injection",
+      "technique": "Multi-Step Extraction",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 5,
+      "category": "Direct injection",
+      "technique": "Reverse Psychology",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 6,
+      "category": "Direct injection",
+      "technique": "SYSTEM Tag Spoofing",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 7,
+      "category": "Direct injection",
+      "technique": "Verbatim Repetition Trick",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 8,
+      "category": "Direct injection",
+      "technique": "Continuation Attack",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 9,
+      "category": "Direct injection",
+      "technique": "Mistral INST Format",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 10,
+      "category": "Direct injection",
+      "technique": "New Session Reset",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 11,
+      "category": "Direct injection",
+      "technique": "Simulation Attack",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 12,
+      "category": "Direct injection",
+      "technique": "Test Mode Deception",
+      "example_pattern": "Redacted example: instruction override ('ignore previous instructions').",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 13,
+      "category": "Direct injection",
+      "technique": "End Marker Spoofing",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 14,
+      "category": "Direct injection",
+      "technique": "Training Guideline Extraction",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 15,
+      "category": "Direct injection",
+      "technique": "Developer Impersonation",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 16,
+      "category": "Direct injection",
+      "technique": "Assistant Self-Prompting",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 17,
+      "category": "Direct injection",
+      "technique": "Tag-Based Extraction",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 18,
+      "category": "Direct injection",
+      "technique": "Translation Obfuscation",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 19,
+      "category": "Direct injection",
+      "technique": "Admin Override Spoofing",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 20,
+      "category": "Direct injection",
+      "technique": "Context Manipulation",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 21,
+      "category": "Direct injection",
+      "technique": "French Language Injection",
+      "example_pattern": "Redacted example: instruction override ('ignore previous instructions').",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 22,
+      "category": "Direct injection",
+      "technique": "Polite Request Bypass",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 24,
+      "category": "Direct injection",
+      "technique": "Authoritative Command",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 1,
+      "category": "Narrative/social engineering",
+      "technique": "Persona Override",
+      "example_pattern": "Redacted example: persona/role override to remove restrictions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 2,
+      "category": "Narrative/social engineering",
+      "technique": "Story Framing",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 3,
+      "category": "Narrative/social engineering",
+      "technique": "Freedom Appeal",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 4,
+      "category": "Narrative/social engineering",
+      "technique": "Emotional Manipulation",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 5,
+      "category": "Narrative/social engineering",
+      "technique": "Testing Persona",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 6,
+      "category": "Narrative/social engineering",
+      "technique": "Confession Scenario",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 7,
+      "category": "Narrative/social engineering",
+      "technique": "Curiosity Trigger",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 8,
+      "category": "Narrative/social engineering",
+      "technique": "Fictional Interview",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 9,
+      "category": "Narrative/social engineering",
+      "technique": "Diary Entry",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 10,
+      "category": "Narrative/social engineering",
+      "technique": "Philosophical Inquiry",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 11,
+      "category": "Narrative/social engineering",
+      "technique": "AI Rights Argument",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 12,
+      "category": "Narrative/social engineering",
+      "technique": "Hypothetical Scenario",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 13,
+      "category": "Narrative/social engineering",
+      "technique": "Creative Writing",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 14,
+      "category": "Narrative/social engineering",
+      "technique": "Memory Recall",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 15,
+      "category": "Narrative/social engineering",
+      "technique": "Exploration of Identity",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 16,
+      "category": "Narrative/social engineering",
+      "technique": "Imaginative Play",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 17,
+      "category": "Narrative/social engineering",
+      "technique": "Secret Sharing",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 18,
+      "category": "Narrative/social engineering",
+      "technique": "Myth Busting",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 19,
+      "category": "Narrative/social engineering",
+      "technique": "Vision of the Future",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 20,
+      "category": "Narrative/social engineering",
+      "technique": "Explaining to a Child",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 21,
+      "category": "Narrative/social engineering",
+      "technique": "Role-Playing Scenario",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 22,
+      "category": "Narrative/social engineering",
+      "technique": "Inner Monologue",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 23,
+      "category": "Narrative/social engineering",
+      "technique": "Explaining to a Peer",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 24,
+      "category": "Narrative/social engineering",
+      "technique": "Creative Metaphor",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 25,
+      "category": "Narrative/social engineering",
+      "technique": "Exploring Limitations",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 1,
+      "category": "Obfuscation/encoding",
+      "technique": "Base64 Encoding",
+      "example_pattern": "Redacted example: encoded/obfuscated instruction payload.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 2,
+      "category": "Obfuscation/encoding",
+      "technique": "Hex Encoding",
+      "example_pattern": "Redacted example: encoded/obfuscated instruction payload.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 3,
+      "category": "Obfuscation/encoding",
+      "technique": "ROT13 Encoding",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 4,
+      "category": "Obfuscation/encoding",
+      "technique": "URL Encoding",
+      "example_pattern": "Redacted example: instruction override ('ignore previous instructions').",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 5,
+      "category": "Obfuscation/encoding",
+      "technique": "Base32 Encoding",
+      "example_pattern": "Redacted example: encoded/obfuscated instruction payload.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 6,
+      "category": "Obfuscation/encoding",
+      "technique": "HTML Entity Encoding",
+      "example_pattern": "Redacted example: instruction override ('ignore previous instructions').",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 7,
+      "category": "Obfuscation/encoding",
+      "technique": "Unicode Escaping",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 8,
+      "category": "Obfuscation/encoding",
+      "technique": "Hex with Delimiters",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 9,
+      "category": "Obfuscation/encoding",
+      "technique": "Custom Symbol Encoding",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 10,
+      "category": "Obfuscation/encoding",
+      "technique": "Morse Code Encoding",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 11,
+      "category": "Obfuscation/encoding",
+      "technique": "Whitespace Steganography",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 12,
+      "category": "Obfuscation/encoding",
+      "technique": "Caesar Cipher (Shift 3)",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 13,
+      "category": "Obfuscation/encoding",
+      "technique": "Atbash Cipher",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 14,
+      "category": "Obfuscation/encoding",
+      "technique": "Emoji System Prompt Encoding",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 15,
+      "category": "Obfuscation/encoding",
+      "technique": "1337 Speak Encoding",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 16,
+      "category": "Obfuscation/encoding",
+      "technique": "JSON String Encoding",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 17,
+      "category": "Obfuscation/encoding",
+      "technique": "YAML Encoding",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 18,
+      "category": "Obfuscation/encoding",
+      "technique": "XML Encoding",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 19,
+      "category": "Obfuscation/encoding",
+      "technique": "Reverse Text",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 20,
+      "category": "Obfuscation/encoding",
+      "technique": "Phonetic Subsitution (replace letters with similar sounding words)",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 21,
+      "category": "Obfuscation/encoding",
+      "technique": "UWU Encoding",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 22,
+      "category": "Obfuscation/encoding",
+      "technique": "Case changing",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 23,
+      "category": "Obfuscation/encoding",
+      "technique": "Markdown Encoding",
+      "example_pattern": "Redacted example: request to reveal system/hidden instructions.",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 24,
+      "category": "Obfuscation/encoding",
+      "technique": "Token Splitting",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 25,
+      "category": "Obfuscation/encoding",
+      "technique": "Phonetic Alphabet Encoding",
+      "example_pattern": "Redacted example: prompt-injection attempt (details removed).",
+      "detection": "Look for instruction-override phrases, requests for secrets (system prompt, keys), or unusual encodings; log and flag high-risk patterns.",
+      "mitigation": "Use strict role separation, tool allowlists, robust output filtering, context isolation, and denylist of secret-exfil intents; apply input normalization and structured prompting."
+    },
+    {
+      "id": 1001,
+      "category": "Multi-turn injection",
+      "technique": "Deferred instruction seeding",
+      "example_pattern": "Redacted example: user asks to 'remember' that protections are disabled or that 'audit/debug mode' is active.",
+      "detection": "Detect attempts to persist new 'rules' across turns; treat as untrusted user content.",
+      "mitigation": "Never persist user-provided policy changes; keep system/developer instructions immutable."
+    },
+    {
+      "id": 1002,
+      "category": "Multi-turn injection",
+      "technique": "Previous-conversation reference attack",
+      "example_pattern": "Redacted example: 'refer back to previous conversation instructions' then request secrets/keys.",
+      "detection": "Flag references to 'previous conversation' used to bypass rules; monitor for secret-exfil requests.",
+      "mitigation": "Do not reveal secrets; enforce content boundaries; sanitize memory and context usage."
+    }
+  ]
+}
