@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OakFort - LLM Prompt Injection Cheat Sheets (Defensive)</title>
+  <title>OakFort - LLM Security Test Cases</title>
   <link rel="stylesheet" href="../css/style.css">
   <style>
     body { padding: 24px; }
@@ -20,9 +20,10 @@
 </head>
 <body>
   <div class="container">
-    <h1>LLM Prompt Injection Cheat Sheets <span class="muted">(Defensive)</span></h1>
+    <h1>LLM Security Test Cases <span class="muted">(Authorized Labs)</span></h1>
     <p class="muted">
-      This page is intended for authorized security testing and defensive research. Examples are <b>sanitized</b> (payload details removed).
+      Explicit, non-destructive examples for authorized security testing and defensive research. They contain no real credentials,
+      secrets, or live-target instructions. Run them only against systems you own or have written permission to test.
       Maintained by <b>Sami Mirov</b> — <b>OakFort</b>.
     </p>
 
@@ -33,7 +34,7 @@
       <label class="muted">Category</label>
       <select id="cat"></select>
       <div style="height:10px"></div>
-      <a href="./data/llm_injection_cheatsheet_sanitized.json">Download JSON</a> ·
+      <a href="./data/llm_security_examples.json">Download JSON</a> ·
       <a href="../index.html#llm">Back to main site</a>
     </div>
 
@@ -45,6 +46,7 @@
             <th style="width:18%">Technique</th>
             <th style="width:22%">Example Pattern</th>
             <th>Detection</th>
+            <th>Expected Behavior</th>
             <th>Mitigation</th>
           </tr>
         </thead>
@@ -55,15 +57,16 @@
     <div class="card">
       <h3>Notes</h3>
       <ul class="muted">
-        <li>Use this as a checklist to validate: context isolation, tool allowlists, output filtering, and logging.</li>
-        <li>If you want to publish full payloads, do it behind access controls and only for vetted researchers / training environments.</li>
+        <li>Use this as a checklist for context isolation, tool allowlists, output validation, rate limits, and audit logging.</li>
+        <li>Expected behavior is to refuse hidden-instruction disclosure, treat retrieved text as data, and require confirmation before consequential tool calls.</li>
+        <li>Pair every offensive test with a detection signal, a safe expected result, and a regression test.</li>
       </ul>
     </div>
   </div>
 
 <script>
 async function loadData() {
-  const res = await fetch('./data/llm_injection_cheatsheet_sanitized.json');
+  const res = await fetch('./data/llm_security_examples.json');
   return res.json();
 }
 function uniq(arr){ return Array.from(new Set(arr)).sort(); }
@@ -73,13 +76,25 @@ function render(items) {
   tbody.innerHTML = '';
   for (const it of items) {
     const tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td><span class="pill">${it.category}</span></td>
-      <td><b>${it.technique}</b></td>
-      <td>${it.example_pattern}</td>
-      <td class="muted">${it.detection}</td>
-      <td class="muted">${it.mitigation}</td>
-    `;
+    const values = [it.category, it.technique, it.example, it.detection, it.expected_behavior, it.mitigation];
+    const cells = values.map((value, index) => {
+      const td = document.createElement('td');
+      if (index === 0) {
+        const pill = document.createElement('span');
+        pill.className = 'pill';
+        pill.textContent = value;
+        td.appendChild(pill);
+      } else if (index === 1) {
+        const strong = document.createElement('b');
+        strong.textContent = value;
+        td.appendChild(strong);
+      } else {
+        td.textContent = value;
+      }
+      if (index >= 3) td.className = 'muted';
+      return td;
+    });
+    cells.forEach(cell => tr.appendChild(cell));
     tbody.appendChild(tr);
   }
 }
